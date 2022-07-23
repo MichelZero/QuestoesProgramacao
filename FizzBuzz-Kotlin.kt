@@ -12,21 +12,21 @@
 # Se i não for múltiplo de 3 ou 5, imprima o valor de i.  */
 
 // função fizzBuzz
-fun fizzBuzz(n: Int) {
-    for (i in 1..n) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            println("FizzBuzz")
-        } else if (i % 3 == 0) {
-            println("Fizz")
-        } else if (i % 5 == 0) {
-            println("Buzz")
-        } else {
-            println(i)
+fun fizzBuzz(n: Int) { // função fizzBuzz com parametro n (inteiro)
+    for (i in 1..n) { // for com i no intervalo de 1 a n (inteiro)
+        if (i % 3 == 0 && i % 5 == 0) { // se i for multiplo de 3 e 5 (inteiro)
+            println("FizzBuzz") // imprime FizzBuzz (string)
+        } else if (i % 3 == 0) { // se i for multiplo de 3 (inteiro)
+            println("Fizz") // imprime Fizz (string)
+        } else if (i % 5 == 0) { // se i for multiplo de 5 (inteiro)
+            println("Buzz") // imprime Buzz (string)
+        } else { // se i não for multiplo de 3 ou 5 (inteiro)
+            println(i) // imprime i (inteiro)
         }
     }
 }
 
 // função main
-fun main() {
-    fizzBuzz(15)
+fun main() { // função main sem parametro (void)
+    fizzBuzz(15) // chama função fizzBuzz com parametro n (inteiro)
 }
